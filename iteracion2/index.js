@@ -1,16 +1,20 @@
 window.onload = function () {
   addContent();
 };
+
 function addContent() {
   // 2.1 Inserta dinamicamente en un html un div vacio con javascript.
+
   const div$$ = document.createElement("div");
   document.body.appendChild(div$$);
 
   // 2.2 Inserta dinamicamente en un html un div que contenga una p con javascript.
+
   const p$$ = document.createElement("p");
   document.body.appendChild(p$$);
 
   // 2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
+
   const pContainer$$ = document.createElement("div");
   for (let index = 0; index < 6; index++) {
     const p$$ = document.createElement("p");
@@ -53,6 +57,7 @@ function addContent() {
 
   // 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div.
   // 	Recuerda que no solo puedes insertar elementos con .appendChild.
+
   const pCreated = document.createElement("p");
   divsCreated = document.querySelectorAll("div");
 
